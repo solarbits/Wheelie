@@ -17,4 +17,6 @@ The steering capability is driven in the Ecorider using a Hall Effect probe on t
 
 The software quoted is that which was used in a 19R Boot and Work Mduino PLC for protyping purposes.  This is an industrially adapted Arduino platform.
 
+**** WARNING ****
+
 None of the content of this page is validated, nor necessarily safe to replicate.  The author takes no responsibility for third parties using the data and methods here.  The project was only produced for interest/amusement of the author
