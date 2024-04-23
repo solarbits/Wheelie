@@ -11,3 +11,10 @@ The manual user control switch (on/off) for scooter/chair is read by the PLC and
 
 The 12V linear actuators are driven by EM-324C DC Motor Controllers supplied by Electromen Oy.  They provide the forward/reverse power switching (for leg up and leg down) based on a 5V signal from the PLC to the FW/BW pins on the board.  The factory setting for 'start' with a gradual ramp-up in speed is tolerable, but the linear actuator motor needs to be abruptly stopped when the limit switches are actuated to avoid the scooter being tipped and the drive wheels beginning to move unexpectedly.  Setting the abrupt stop parameter requires use of the plug-in Electromen Oy EM-236 interface unit
 
+For safety there should be a sequence that regularly checks the battery voltage, and when it falls to a point suggesting limited power remaining a warning LED should be lit.  If the voltage drops further to a point where the residual power is small then the software should drive the scooter into chair mode.  This will make it stable should the power drop completely and the balance mode capability is lost
+
+The steering capability is driven in the Ecorider using a Hall Effect probe on the main Ecorider tiller.  For the purposes of the two-wheeled sit-on scooter the probe may be taken to the arm of the scooter and fitted into a freely-moving automatically-centring lever (a left-right joystick) and the wire to the socket on the may be simply extended to connect the two.
+
+The software quoted is that which was used in a 19R Boot and Work Mduino PLC for protyping purposes.  This is an industrially adapted Arduino platform.
+
+None of the content of this page is validated, nor necessarily safe to replicate.  The author takes no responsibility for third parties using the data and methods here.  The project was only produced for interest/amusement of the author
