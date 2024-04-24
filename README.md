@@ -1,7 +1,7 @@
 # Wheelie
 This is a summary of a project to make a two-wheeled scooter that can be used while sat upon, rather than stood upon.
 
-It is based on a two-wheeled scooter, known as an Ecorider and the device needs to be stabilised when first sat upon (it is a chair) and then with the flick of a switch it goes into balance mode and becomes a scooter; it thereby becomes stable by being self-balancing.
+It is based on a two-wheeled scooter, known as an Ecorider and the device needs to be stabilised when first sat upon (as if it were a chair) and then with the flick of a switch it goes into balance mode and becomes a scooter; it thereby becomes stable by being self-balancing.
 
 To make it into a chair the design uses two 12V linear actuators that drive down and form legs for the device, making a stable mechanical configuration (four-point contact including the driving wheels). On their first touch on the ground the linear actuator drives must be stopped and balance mode inhibited else the scooter would be offset.  This would have adverse consequences because the offset is the arrangement that is normally automatically corrected and is the basis for implementing the forward/backward drive of the scooter.  The design approach used is to have the legs fitted in a sliding socket (with about 5mm in vertical deflection) with limit switches that are actuated by the deflection and inform the software when each leg has landed.  On finding each leg landed the PLC abruptly stops the downward drive of that leg and when BOTH legs are landed the PLC immediately switches off the balance mode so that the device becomes a passive 'chair'.  There is a flow chart that shows the details of this protocol.
 
