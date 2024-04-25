@@ -15,7 +15,7 @@ For safety there should be a sequence that regularly checks the battery voltage,
 
 The steering capability is driven in the Ecorider using a Hall Effect probe on the main Ecorider tiller.  For the purposes of the two-wheeled sit-on scooter the probe may be taken to the arm of the scooter chair and fitted into a freely-moving automatically-centring lever (a left-right joystick) and the wire to the socket on the circuit board may be simply extended to connect the two.  The steering drive is only active when the scooter is in balance mode
 
-The software quoted is that which was programmed for use in a 19R Boot and Work (Barcelona) Mduino PLC for protyping purposes.  This PLC is an industrially adapted Arduino platform.
+The software quoted is that which was programmed for use in a 19R Boot and Work (Barcelona) Mduino PLC for protyping purposes.  This PLC is an industrially adapted Arduino platform.  This PLC was used for prototyping convenience and a bare Arduino board could have served the same purpose
 
 **** WARNING ****
 
